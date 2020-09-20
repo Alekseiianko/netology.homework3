@@ -1,6 +1,6 @@
-private const val TYPE_MASTERCARD_OR_MAESTRO = "Mastercard or Maestro"
-private const val TYPE_VISA_OR_MIR = "Visa or Mir"
-private const val TYPE_DEFAULT = "VK Pay"
+public const val TYPE_MASTERCARD_OR_MAESTRO = "Mastercard or Maestro"
+public const val TYPE_VISA_OR_MIR = "Visa or Mir"
+public const val TYPE_DEFAULT = "VK Pay"
 
 fun main() {
     val seconds = 3200
@@ -52,7 +52,7 @@ private fun getTimeAgo(
         else -> "Был(а) в сети давно"
     }
 
-private fun checkCommission(
+public fun checkCommission(
     typeOfCard:String,
     payments:Int,
     paymentsWithPast:Int
