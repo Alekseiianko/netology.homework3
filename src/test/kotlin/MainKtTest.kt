@@ -16,7 +16,7 @@ class MainKtTest {
             paymentsWithPast = paymentsWithPast
         )
 
-        assertEquals(commission, 75);
+        assertEquals(commission, 76);
     }
 
 }
