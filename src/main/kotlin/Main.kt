@@ -15,7 +15,7 @@ fun main() {
     val payments = 10000
     val paymentsWithPast = payments + pastPaymentsOfMonth
 
-    val typeOfCard = TYPE_DEFAULT
+    val typeOfCard = TYPE_MASTERCARD_OR_MAESTRO
 
 
     var commission = checkCommission(typeOfCard, payments, paymentsWithPast)
@@ -52,7 +52,7 @@ private fun getTimeAgo(
         else -> "Был(а) в сети давно"
     }
 
-public fun checkCommission(
+fun checkCommission(
     typeOfCard:String,
     payments:Int,
     paymentsWithPast:Int
